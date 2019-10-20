@@ -1,10 +1,10 @@
-#tsuru-deb
+# tsuru-deb
 
 This repository contains sources for [Tsuru](http://tsuru.io)'s Debian packages.
 
-##Install packages from repository
+## Install packages from repository
 
-###Ubuntu precise (12.04 LTS) / Ubuntu trusty (14.04 LTS)
+### Ubuntu precise (12.04 LTS) / Ubuntu trusty (14.04 LTS)
 
 The simplest way to use is the official vagrant provision. Install [vagrant](http://www.vagrantup.com/downloads.html) and your favorite vagrant provider before running these commands:
 
@@ -46,9 +46,9 @@ Run ``apt-get update``, you can install ``tsuru`` for Debian:
 	% sudo apt-get update
 	% sudo apt-get install tsuru
 
-##Building locally
+## Building locally
 
-###Dependencies
+### Dependencies
 
 In order to install the necessary dependencies, on Ubuntu, run with a sudoer
 user:
@@ -71,7 +71,7 @@ To build source packages for all softwares, run:
 
 The result package(s) is/are located in directory ``./<package-name>.buildsrc``.
 
-###Building binary packages
+### Building binary packages
 
 To build all packages just run:
 
@@ -95,7 +95,7 @@ But you can still initialize ``cowbuilder`` environments by:
 
 It will create all ubuntu & debian releases environments supported by Tsuru team.
 
-###Uploading source packages to PPA (only Ubuntu distributions)
+### Uploading source packages to PPA (only Ubuntu distributions)
 
 You can upload any signed source packages to your own PPA, just use:
 
@@ -108,7 +108,7 @@ Notice: launchpad.net requires source packages only.
 It will build all binary .deb packages on its cloud after uploading.
 And do not try to upload Debian distribution packages, it will simply fail.
 
-###Hosting local repository (Ubuntu & Debian)
+### Hosting local repository (Ubuntu & Debian)
 
 Because PPA only supports Ubuntu, we introduced ``reprepro`` to manage and host both Ubuntu
 and Debian packages. It will be initialized with ``cowbuilder``. Or you can initialize it
